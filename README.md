@@ -9,4 +9,4 @@
 - Programmer le stream et les activités
 - Compléter les TODO dans les notebooks
 - Lire et comprendre si il est préférable de créer l'encodeur et le décodeur sous forme de tf.keras.Layer ou sous forme de méthode.
-(Pour le dernier point)[https://www.tensorflow.org/guide/keras/custom_layers_and_models#the_model_class]
+[Pour le dernier point](https://www.tensorflow.org/guide/keras/custom_layers_and_models#the_model_class)
