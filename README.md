@@ -6,6 +6,5 @@
 # TODO
 
 - Écrire le README
-- Finir le code pour load les données afin de travailler sur les deux environnements
 - Programmer le stream et les activités
 - Compléter les TODO dans les notebooks
