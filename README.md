@@ -8,4 +8,5 @@
 
 - Écrire le README
 - Programmer le stream et les activités
-- Compléter les TODO dans les notebooks
+- Compléter les TODO dans les *notebooks*
+- Suivre les instructions dans le *notebook* : *tensorflow.ipynb*
