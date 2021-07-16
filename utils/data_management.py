@@ -1,5 +1,31 @@
 import os
 import numpy as np
+import torch
+
+
+def create_tensor_from_dataset(dataset: torch.utils.data.Dataset, train: bool=True) -> torch.tensor:
+    """
+    Transform a dataset from Dataset class to torch tensor
+    :param dataset: torch dataset
+    :param train: for training phase (boolean), if false -> test phase
+    :return: tensors for data and labels (data, labels) : tuple
+    """
+    list_imgs = []
+    list_lbls = []
+
+    for i in range(len(dataset)):
+        img, lbl = dataset[i]
+        list_imgs.append(img)
+        list_lbls.append(lbl)
+        # TODO : Fix \r trick
+        # print(f"\rStacking {'train' if train else 'test'} : {(i+1) / len(dataset) * 100:.2f}%", end='')
+    
+    tensor_imgs = torch.stack(list_imgs)
+    tensor_lbls = torch.tensor(list_lbls)
+    print('')
+
+    return tensor_imgs, tensor_lbls
+
 
 def load_data(dataset_name: str, data_path: str='data/') -> dict:
     """
