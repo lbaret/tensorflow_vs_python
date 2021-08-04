@@ -113,7 +113,7 @@ class TFDataset:
         """
         return len(self.dataset['test']['images'])
 
-# TODO : Redefine this class with the new class
+
 class TFBatchLoader:
     def __init__(self, batch_size: int=64, shuffles_nb: int=10000):
         # Config
